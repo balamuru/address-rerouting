@@ -2,9 +2,8 @@ package com.vgb.reroute.service;
 
 import com.vgb.reroute.data.Location;
 
-import java.util.function.Supplier;
+public interface DestinationService {
+    boolean create(String id, Location location);
 
-public interface CurrentLocationService {
     Location get(String id);
 }
-
